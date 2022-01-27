@@ -1,0 +1,86 @@
+
+$color:rgb(245, 244, 244);
+$greencolor:rgb(27, 155, 27);
+@mixin theme($theme: rgb(241, 241, 241)) {
+    background: $theme;
+    // box-shadow: 0 0 1px rgba($theme, .25);
+    color: rgb(10, 9, 9);
+  
+  }
+form{
+        @include theme;
+
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 0%;
+}
+.give{
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+margin-top: 8px;
+//چرا بالاش مشکیه؟من که توسی میزارم
+border-color: gray;
+}
+.Subject{
+    width: 100%;
+    border-radius: 3px;
+
+}
+.Submit{
+    width: 60px;
+    background-color: $greencolor;
+    height:30px;
+    border-radius: 3px;
+    color: $color;
+    border-color: $greencolor;
+}
+#pp{
+    display: none;
+}
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80% ;
+    margin-top: 8%
+
+ }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .messege{
+     text-align: center;
+  }
+

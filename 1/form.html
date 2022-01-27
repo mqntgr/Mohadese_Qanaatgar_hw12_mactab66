@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+</head>
+<body>
+    <form action="" class="form1" name="contact_form" onsubmit="handleSubmit(event)" onsubmit="return validate_form ()"> 
+        <div class="form1">
+        <label for="fname" class="lbl">firstName
+            <br>
+        <input type="text" id="fname" name="firstname" class="give" placeholder="Your name.." required aria-required="true">
+    </label>
+    <br>
+           <label for="lname" class="lbl">lastname
+               <br>
+           <input type="text" name="lname" id="lastname" class="give" placeholder="Yourlastname">
+        </label>
+        <br>
+             <label for="country" class="lbl">country
+                 <br>
+             <select name="country" id="countryy" class="give">
+                 <option value="Australia">Australia</option>
+                 <option value="canada">canada</option>
+                 <option value="iran">iran</option>
+             </select>
+             </label>
+             <br>
+             <label for="sub" class="lbl">subject
+                 <br>
+             <textarea name="sub" id="subject" cols="30" rows="10" placeholder="Write something" class="Subject"></textarea>
+            </label>
+             <br>
+               <input type="submit" class="Submit" id="submit" class="w3-button w3-black" onclick="btnFunc()">
+
+            </form>
+</div>
+<div id="myModal" id="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p class="messege">Your information was recorded</p>
+    </div>
+  
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>

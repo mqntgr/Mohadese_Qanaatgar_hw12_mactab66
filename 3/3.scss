@@ -1,0 +1,12 @@
+@mixin pp($x,$y, $pseudo:false) {
+
+    $padding: unquote(($y / $x ) * 100 + '%' );
+    width:100%;
+    padding: $padding;
+}
+
+   .next{
+            @include pp(100,3);
+          }
+        
+
